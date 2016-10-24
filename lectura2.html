@@ -8,30 +8,11 @@
         <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <title>Ova 3</title>
         <link rel="stylesheet" href="css/normalize.css">
+        <!--<link href='http://fonts.googleapis.com/css?family=arial' rel='stylesheet' type='text/css'>-->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsiveslides.css">
-  <link rel="stylesheet" href="css/slider.css">
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="js/responsiveslides.min.js"></script>
-  <script>
-    
-    $(function () {    
-
-      // Slideshow 4
-      $("#slider4").responsiveSlides({
-        auto: true,
-        pager: false,
-        nav: true,
-        speed: 2000,
-        namespace: "callbacks"
-        
-      });
-
-    });
-  </script>
      </head>
     <body>	
-        <div id="contenidos">
+        <Div id="contenidos">
             <header>
                 <div id="apDiv1"><img src="img/banner.jpg" width="1000" height="168">
                   <div id="apDiv24">OVA 3 - Tecnología en Desarrollo de Software</div>
@@ -40,7 +21,7 @@
             <p>&nbsp; </p><p> &nbsp;</p> <p> &nbsp;</p>
     		<nav id="navigation">
                         <ul id="main-menu">
-                          <li class="current-menu-item"><a href="index.html" class="menu">Inicio</a></li>
+                          <li><a href="index.html" class="menu">Inicio</a></li>
                           <li class="parent"><a href="#" class="menu">Lecturas</a>
                               <ul class="sub-menu">
                                   <li><a href="lectura1.html">Lectura 1</a></li>
@@ -53,7 +34,7 @@
                               <ul class="sub-menu">
                                   <li><a href="actividad1.html">Actividad 1</a></li>
                                   <li><a href="actividad2.html">Actividad 2</a></li>
-                                  <li><a href="actividad3.html">Actividad 3</a></li> 
+                                  <li><a href="actividad3.html">Actividad 3</a></li>  
                                   <li><a href="actividad4.html">Actividad 4</a></li>
                                   <li><a href="actividad5.html">Actividad 5</a></li>
                               </ul>
@@ -81,7 +62,7 @@
                     <input type="hidden" name="ie" value="UTF-8" />
                     <input type="hidden" name="oe" value="UTF-8" />
                     <input type="text" id="s" name="q" value="" size="12" />
-                    
+                    <font size=-1>
                     <input type="submit"  id="x" name="btnG" value="Buscar" />
                     <input type="hidden" name="domains" value="https://estudios.unad.edu.co/ingenieria-de-sistemas" />
                     <br />
@@ -94,33 +75,54 @@
              </nav>
             <div id="apDiv14"><a href="https://campus0a.unad.edu.co/campus0/login/index.php" target="_blank"><img src="img/campus.png" width="116" height="101"></a>									</div>
     <section>
-    <h2>Diseño de Sitios Web - UNAD ECBTI</h2>
+    <h2>PROGRAMACION WEB1 - UNAD ECBTI</h2>
     <div id="apDiv20"><a href="https://informacion.unad.edu.co/correo" target="_blank"><img src="img/rss_aqu_32.png" class="menu" title="Correo Institucional" border="0" /></a></div>
                 <article>
                     
-                    <!-- Slideshow 4 -->
-                    <div class="callbacks_container">
-                      <ul class="rslides" id="slider4">
-                          <li>
-                              <img src="img/1.jpg" alt="" class="noborder">
-                          <p class="caption">Creatividad</p>
-                        </li>
-                        <li>
-                            <img src="img/2.jpg" alt="" class="noborder">
-                          <p class="caption">Responsabilidad</p>
-                        </li>
-                        <li>
-                            <img src="img/3.jpg" alt="" class="noborder">
-                          <p class="caption">Nuevas Ideas</p>
-                        </li>
-                      </ul>
-                    </div>
+                     <h2>Vinculación de una Base de Datos a una página con php</h2>
+                     <img src="img/imagen2-1.jpg" />
+                    <p>
+                    primero debemos conectarnos a nuestra base de datos, para ello debemos hacer uso de un sistema de gestion de base de datos
+                    como lo son los siguientes: (MySQL, PostgreSQL, SQLite, Interbase, Firebird, Access, Oracle, MS SQLServer, DB2, SyBase, Informix o conexion ODBC)
+                                        
                     
-                    <!--texto-->
-                    </figure>
-                </article>
-    <!--agregar contenido-->
+                    </p>
+                    <p>
+                    Una vez la base de datos, la cual va ser usada para que  almacene la información  de nuestra página web, para ello a continuación se muestra las páginas que contiene una web para el registro de nuevos usuarios:</p>
 
+
+                    <p>Página principal: la cual contiene datos suministrados anteriormente como fechas, fotos entre otras.</p>
+
+                    <p>Página con el formulario de registro como nuevo usuario: aquí se hace uso de las listas las cuales nos muestran los países que se encuentran en la base de datos para seleccionar a cual pertenece el usuario.</p>
+
+                  <p>Página con el listado resultado de una búsqueda
+                    A partir de los datos recibidos desde la [Página con el formulario de búsqueda] (título, fecha y/o país) debe realizar una búsqueda en la tabla Fotos y mostrar el resultado obtenido.</p>
+
+                   <p>Página detalle foto
+                       Muestra toda la información sobre una foto seleccionada en la página</p> 
+
+                    <p>Página control de acceso
+                    Controla el acceso a la parte privada para los usuarios registrados (los que figuran en la tabla Usuarios). Si el usuario está registrado, mediante una redirección en la parte del servidor se debe mostrar la página con el menú de usuario registrado; si el usuario no está registrado, mediante una redirección en la parte del servidor se debe mostrar la página principal del sitio web.</p>
+
+                    <p>Página "Crear álbum"
+                        En la lista desplegable para seleccionar el país, mostrar los países a partir de la tabla Paises de la base de datos.</p>
+
+                     <p>Página "Mis álbumes"
+                         Muestra un listado con todos los álbumes del usuario.</p>
+
+                   <p>Página "Ver álbum"
+                       Desde la [Página "Mis álbumes"], muestra todas las fotos que contiene un álbum.</p>
+
+                  <p>Página "Añadir foto a álbum"
+                       Contiene un formulario con los datos necesarios para añadir una foto (título, fecha, país, foto y álbum al que se añade la foto).
+                       En el  siguiente ejemplo nos muestra como poder visualizar todo el contenido de una tabla en una página web. Para ello debemos conectarnos al servidor local con el usuario wwwdata sin contraseña, luego selecciona la base de datos, recupera todo el contenido de la tabla libros y nos muestra los campos título y resumen.</p>
+                       <img src="img/imagen2.PNG" />
+
+
+                   
+
+                    </p>
+      			</article>
     </section>
     <aside> 
                 <div id="apDiv5">
@@ -142,21 +144,17 @@
           <a class="twitter-timeline"  href="https://twitter.com/hashtag/unad" data-widget-id="784551860233441281" width="700" height="280" frameborder="0" style="border:0" >Noticias</a>
           
       </div>
-      
-          
-      
     	</aside>
-            
-            
 		<Footer>
           <div id="apDiv25">Para uso de la Universidad Nacional Abierta y a Distancia UNAD</div>
           <div id="apDiv26">Elaborado por: Luis Fernando Jaramillo Hernández, estudiante del programa Ing. de Sistemas </div>
 		  <div id="apDiv13"><img src="img/logoUNADgrisInferior.png" width="225" height="41"></div>
 		  <div id="apDiv27">CEAD Dosquebradas - 2016</div>
-                </Footer>
-        </div>
-    <script type="text/javascript" src="js/modernizr.js"></script> 
-    <script src="js/prefixfree.min.js"></script> 
+    	</Footer>
+   </body>
+    <script src="js/modernizr.js"></script>   
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-2.1.1.js"></script>
     <script>!function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
             if (!d.getElementById(id)) {
@@ -167,6 +165,4 @@
             }
         }(document, "script", "twitter-wjs");
     </script>
-    </body>
-    
 </html>
